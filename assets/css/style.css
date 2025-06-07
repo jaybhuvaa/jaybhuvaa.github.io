@@ -497,6 +497,13 @@ main {
 .service-item-title {
   margin-bottom: 7px;
 }
+
+.skill-card:hover {
+  background-color: #c8c8c8; /* Light grey */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 .skill-section {
   text-align: center;
   padding: 10px 20px;
@@ -537,31 +544,69 @@ main {
 
 
 .certification-section {
-  padding-left: 1rem;
+  padding: 1rem 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: auto;
 }
 
 .certification-list {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #333;
+  list-style: none;
+  padding-left: 0;
 }
 
 .certification-list li {
-  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.certification-list li::before {
+  content: '🎓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 18px;
 }
 
 .certification-list a {
-  color: #1e90ff;
   text-decoration: none;
-  transition: color 0.2s ease;
+  color: #2b5dab;
+  transition: all 0.2s ease-in-out;
 }
 
 .certification-list a:hover {
-  color: #0056b3;
+  color: #1c3b70;
   text-decoration: underline;
 }
+
+.contact-info1 {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.email-link1 {
+  font-size: 1.1rem;
+  color: #2b5dab;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+  color: #1c3b70;
+}
+
+
 
 
 .service-item-text {
